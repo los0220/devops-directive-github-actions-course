@@ -18,6 +18,6 @@ runs:
   # Passing the input as an environmental variable
   env:
     INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
-  # Passing the value in the args list
+  # Passing the input value in the args list
   # args:
   #   - ${{ inputs.who-to-greet }}

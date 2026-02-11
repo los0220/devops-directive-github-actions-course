@@ -1,0 +1,12 @@
+name: Hello shell
+description: "Greet someone and print env"
+
+inputs:
+  who-to-greet:
+    description: "Name to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: docker
+  image: Dockerfile
