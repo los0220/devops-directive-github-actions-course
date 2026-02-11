@@ -2,6 +2,9 @@
 name: 00 Container Actions Input Env
 
 on:
+  push:
+    branches:
+      - container-actions-input-env
   workflow_dispatch: 
 
 jobs:

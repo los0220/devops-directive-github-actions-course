@@ -1,9 +1,18 @@
 #!/bin/sh -l
 
+get_inputs() {
+    printenv | grep "INPUT"
+}
+
+echo "::group::printenv"
+
 echo "======================== ENV =========================="
-echo "$(printenv)"
+printenv
+
+echo "::endgroup::"
 
 echo "=================== INPUT in ENV ======================"
-echo "$(printenv)" | grep "INPUT"
+get_inputs
+echo "::notice::$(get_inputs)"
 
 exit 0
